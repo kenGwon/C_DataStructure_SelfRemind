@@ -51,12 +51,6 @@ void sl_printStack()
 // LOCAL FUNTION
 //=========================================================================//
 
-/**
-  desc : 스택이 비었는지 확인
-  return
-  : 비었으면, 1(true) 반환
-  : 비어있지 않으면, 0(fals)
-*/ 
 int sl_isEmpty_impl()
 {
     if(sl_top == NULL) return 1;
@@ -104,7 +98,7 @@ element sl_peek_impl()
 
 void sl_printStack_impl()
 {
-    printf("뒤로가기 스택 = [ ");
+    printf("\"뒤로\" 스택(top <--- bottom) = [ ");
     StackNode* p = sl_top;
     while(p)
     {

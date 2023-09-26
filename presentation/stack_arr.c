@@ -102,7 +102,7 @@ element sa_peek_impl()
 
 void sa_printStack_impl()
 {
-    printf("앞으로가기 스택 = [ ");
+    printf("\"앞으로\" 스택(top <--- bottom) = [ ");
     for (int i = sa_top; i >= 0; i--)
     {
         printf("%s ", stack[i]);
